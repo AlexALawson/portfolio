@@ -1,0 +1,116 @@
+.navbar {
+  height: 75px; 
+  font-family: 'Ovo', sans-serif;
+  background-color: #f5f5f5;
+  color: #0F1626;
+}
+
+#bootstrap-overrides body {
+  background-color: #0F1626;
+}
+div {
+  background-color: #ffffff; 
+}
+
+#bootstrap-overrides h1 {
+margin-left: 50px;
+ font-size: 4rem; 
+ color: #bcd5d1
+}
+
+#bootstrap-overrides h3 {
+  font-family: 'Ovo', sans-serif;
+  text-align: center;
+  color: #283018;
+  font-size: 3rem;
+
+}
+#bootstrap-overrides .jumbotron {
+  background: #729f98;
+  width: 100%;
+  height: 650px;
+  background-size: cover; 
+  overflow: hidden;
+}
+
+#bootstrap-overrides p {
+  text-align: center;
+  color: #0F1626;
+  margin-bottom: 10rem;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    display: inline-block;
+}
+
+.social .fa-facebook:hover {
+    color: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    color: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    color: #e64522;
+}
+
+.social .fa-linkedin:hover {
+    color: #0094BC;
+}
+
+.navbar-default .navbar-nav ul li{
+  display: inline-block;
+  color: #000000;
+  font-size: 19px;
+  margin: 20px;
+
+
+}
+
+}
+#bootstrap-overrides  p {
+  text-align: center;
+  font-size: 1.75rem; 
+  margin-top: -80px;
+  font-family: 'Muli',sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px; 
+  color: #0F1626;
+
+}
+
+#bootstrap-overrides h4 {
+  font-size: 2.5rem;
+  margin-top: 25px; 
+  text-align: center;
+  color: #0F1626;
+
+}
+
+#bootstrap-overrides .about.spacer{padding-left: 4em; padding-right: 4em;padding-bottom: 0;}
+
+
+.services ul li{width: 10em;height: 10em;border: 1px solid #ccc;padding: 0;border-radius: 50%;margin: 0 1.25em;line-height: 13.5em;color: #999;}
+.services ul li span{line-height: 2em;display: inline-block;font-weight: 300;}
+.services ul li span i{font-size: 3em;}
+.services ul li span b{display: block;font-size: 1em;font-weight: 300;}
+
+
+.recent {
+  margin-top: 50px; 
+}
+
+#works{padding-top:6em;}
+#works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
+#works figcaption a:hover{text-decoration: none;padding: 0 3em;}
+/*works*/
+
+#bootstrap-overrides .port  p {
+  font-family: 'Muli';
+  font-size: 2rem; 
+  margin-top: 20px; 
+  letter-spacing: 2px; 
+}
