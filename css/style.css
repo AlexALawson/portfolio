@@ -1,5 +1,11 @@
+#bootstrap-overrides body {
+  color: #f5f5f5;
+}
 
-
+.col-sm-6 p{
+  width: 500px;
+  margin: 0 auto;
+}
 
 .navbar {
   height: 75px; 
@@ -11,10 +17,41 @@
 #bootstrap-overrides body {
   background-color: #0F1626;
 }
+
+
 div {
   background-color: #ffffff; 
 }
 
+.shop {
+  width: 320px;
+  height:409px;
+}
+
+.btns:hover {
+  background-color: steelblue;
+}
+
+#bootstrap-overrides .container {
+  width: 100%;
+}
+
+.hiders {
+  align-content: center;
+  margin: 0 auto ;
+}
+
+img {
+    opacity: 0.6;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.portDiv {
+  font-size: 30px; 
+  font-weight: 700; 
+  color: #AB987A;
+  text-align: center;
+}
 #bootstrap-overrides h1 {
 margin-left: 50px;
  font-size: 8rem; 
@@ -24,7 +61,7 @@ margin-left: 50px;
  font-weight: 400;
  letter-spacing: 8px;
  margin-left: 9rem;
- margin-top: 20rem;
+ margin-top: 100px;
 
 }
 
@@ -41,14 +78,14 @@ margin-left: 50px;
 #bootstrap-overrides .jumbotron {
   background: #0F1626;
   width: 100%;
-  height: 650px;
+  height: 500px;
   background-size: cover; 
   overflow: hidden;
 }
 
 #bootstrap-overrides p {
+  font-size: 18px;
   text-align: center;
-  color: #0F1626;
   margin-bottom: 10rem;
 
 }
@@ -85,8 +122,6 @@ margin-left: 50px;
 
 }
 #bootstrap-overrides  p {
-  text-align: center;
-  font-size: 1.75rem; 
   margin-top: -80px;
   font-family: 'Muli',sans-serif;
   font-weight: 300;
@@ -123,8 +158,118 @@ margin-left: 50px;
 /*works*/
 
 #bootstrap-overrides .port  p {
-  font-family: 'Muli';
   font-size: 2rem; 
   margin-top: 20px; 
   letter-spacing: 2px; 
+  font-weight: 400;
+}
+/*
+Hover functionality for portfolio*/
+
+
+.view {
+    width: 320px;
+    height: 409px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+.view .mask, .view .content {
+    width: 320px;
+    height: 409px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+
+#bootstrap-overrides .col-sm-6 {
+  padding: 10px;
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: white;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.describe {
+  color: white;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000;
+    font-color: white;
+
+}
+
+.view-third img {   
+    transition: all 0.2s ease-in; 
+}
+.view-third .mask { 
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  transform: translate(460px, -100px) rotate(180deg);
+  transition: all 0.2s 0.4s ease-in-out;
+}
+.view-third h2{
+  transform: translateY(-100px);
+  transition: all 0.2s ease-in-out;
+}
+.view-third p { 
+  transform: translateX(300px) rotate(90deg);
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+.view-third a.info { 
+  transform: translateY(-200px);
+  transition: all 0.2s ease-in-out;
+} 
+.view-third:hover .mask { 
+  opacity:1; 
+  transition-delay: 0s;              
+  transform: translate(0px, 0px);
+}
+.view-third:hover h2 { 
+  transform: translateY(0px); 
+  transition-delay: 0.5s; 
+}
+.view-third:hover p { 
+  transform: translateX(0px) rotate(0deg);
+  transition-delay: 0.4s;
+
+}
+.view-third:hover a.info { 
+  transform: translateY(0px);
+  transition-delay: 0.3s;
 }
