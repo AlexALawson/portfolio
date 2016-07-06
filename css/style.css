@@ -1,60 +1,139 @@
-#bootstrap-overrides body {
-  color: #f5f5f5;
+body {
+  font-family: 'Muli', serif; 
 }
 
-.col-sm-6 p{
-  width: 500px;
+.col-sm-6 p {
+  width: 450px;
+  padding: 50px;
   margin: 0 auto;
+  font-family: 'Inconsolata';
+  text-transform: lowercase; 
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+
+a {
+  color: #f7484e;
+}
+
+
+#yelp {
+  width: 100%;
+  background-color: #f7484e;
+  float: left;
+  height: 500px;
+  display: inline-block;
+  color: white;
+}
+
+#yelp p {
+  padding-left: 50px;
+}
+
+.buttons {
+  margin-left: 50px;
+  float: left;
+}
+
+
+.yelp {
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 50px;
+  color: white;
+  font-family: 'Muli'
+}
+
+#yelp1 div {
+  background-color: #292929;
+}
+
+
+#yelp img {
+  max-width: 40%;
+  border: 0;
+  float: right;
+  margin-right: 50px;
+  margin-top: 50px;
+
+}
+
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
 }
 
 .navbar {
+  background-color: white;
   height: 75px; 
-  font-family: 'Ovo', sans-serif;
-  background-color: #0f1626;
-  color: #0F1626;
-}
-
-#bootstrap-overrides body {
-  background-color: #0F1626;
+  margin-bottom: 0;
 }
 
 
-div {
-  background-color: #ffffff; 
-}
+
 
 .shop {
-  width: 320px;
-  height:409px;
+  width: 100%;
+  height: 100%;
 }
 
 .btns:hover {
-  background-color: steelblue;
+  background-color: #292929;
+  color: white;
 }
 
-#bootstrap-overrides .container {
-  width: 100%;
+.btns {
+  color: #f7484e;
 }
+
+span:hover {
+  color: white;
+}
+
+.spacer {
+  margin: 20px;
+}
+
 
 .hiders {
   align-content: center;
   margin: 0 auto ;
 }
 
-img {
-    opacity: 0.6;
+.view img {
+    width: 200px;
+    height: 200px; 
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
-.portDiv {
-  font-size: 30px; 
-  font-weight: 700; 
-  color: #AB987A;
-  text-align: center;
+.prts {
+  width: 80%;
+  align-content: center;
+
 }
-#bootstrap-overrides h1 {
-margin-left: 50px;
- font-size: 8rem; 
+
+
+.view.view-third {
+  width: 200px;
+  background-color: #292929;
+  height: 200px; 
+  padding: -40px;
+  }
+
+
+#tagline {
+  font-family: 'Muli', serif; 
+  margin-top: 100px;
+  color: #f7484e;
+  font-size: 28px;
+  margin-left: 400px;
+}
+
+#name {
+ font-size: 6rem; 
  color: #f5f5f5; 
  font-family: 'Ovo', sans-serif;
  text-transform: lowercase;
@@ -62,32 +141,33 @@ margin-left: 50px;
  letter-spacing: 8px;
  margin-left: 9rem;
  margin-top: 100px;
-
 }
 
-#bootstrap-overrides h3 {
-  margin-bottom: 40px;
-  font-family: 'Ovo', sans-serif;
+#titles {
+  margin-bottom: 0 auto;
+  font-family: 'Muli', sans-serif;
   text-align: center;
-  color: #AB987A;
-  font-size: 3rem;
+  font-size: 25px;
   letter-spacing: 2px;
-  margin-top: 10rem;
-
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #292929; 
+  text-transform: lowercase;
 }
-#bootstrap-overrides .jumbotron {
-  background: #0F1626;
+ .jumbotron {
+  background: #292929;
   width: 100%;
   height: 500px;
   background-size: cover; 
   overflow: hidden;
+  margin-top: 0;
 }
 
-#bootstrap-overrides p {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 10rem;
-
+#recent {
+  font-family: 'Ovo', serif; 
+  width: 100px;
+  text-transform: uppercase;
+  margin-top: -100px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -113,67 +193,68 @@ margin-left: 50px;
 
 .navbar-default .navbar-nav ul li{
   display: inline-block;
-  color: #000000;
-  font-size: 19px;
   margin: 20px;
-
-
 }
 
+
+span {
+  color: #f7484e;
 }
-#bootstrap-overrides  p {
-  margin-top: -80px;
+
+
+ p {
   font-family: 'Muli',sans-serif;
   font-weight: 300;
   letter-spacing: 2px; 
-  color: #0F1626;
-
 }
 
-#bootstrap-overrides h4 {
+.btn-info-outline {
+  background-color: white;
+  color: #292929;
+  margin-top: 0px;
+}
+ h4 {
   font-size: 2.5rem;
-  margin-top: 25px; 
+  font-family: 'Inconsolata';
   text-align: center;
   color: #0F1626;
-  margin-bottom: 30px;
-
 }
 
-#bootstrap-overrides .about.spacer{padding-left: 4em; padding-right: 4em;padding-bottom: 0;}
+#padding {
+  padding-bottom: 100px;
 
+}
+.about.spacer{padding-left: 4em; padding-right: 4em;padding-bottom: 0;}
 
-.services ul li{width: 10em;height: 10em;border: 1px solid #ccc;padding: 0;border-radius: 50%;margin: 0 1.25em;line-height: 13.5em;color: #999;}
+.services ul li{width: 10em;height: 10em;padding: 0;border-radius: 50%;margin: 0 1.25em;line-height: 13.5em;color: #f7484e;}
 .services ul li span{line-height: 2em;display: inline-block;font-weight: 300;}
 .services ul li span i{font-size: 3em;}
 .services ul li span b{display: block;font-size: 1em;font-weight: 300;}
-
-
-.recent {
-  margin-top: 50px; 
-}
 
 #works{padding-top:6em;}
 #works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
 #works figcaption a:hover{text-decoration: none;padding: 0 3em;}
 /*works*/
 
-#bootstrap-overrides .port  p {
+.port  p {
   font-size: 2rem; 
-  margin-top: 20px; 
+  margin-top: 40px; 
   letter-spacing: 2px; 
   font-weight: 400;
 }
+
+
 /*
 Hover functionality for portfolio*/
 
 
+
 .view {
-    width: 320px;
-    height: 409px;
-    margin: 10px;
+
+    width: 100%;
+    margin: 40px;
+    height: 100%;
     float: left;
-    border: 10px solid #fff;
-    overflow: hidden;
     position: relative;
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
@@ -181,20 +262,91 @@ Hover functionality for portfolio*/
     background: #fff url(../images/bgimg.jpg) no-repeat center center
 }
 .view .mask, .view .content {
-    width: 320px;
-    height: 409px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    overflow: hidden;
     top: 0;
     left: 0
 }
 
-#bootstrap-overrides .col-sm-6 {
-  padding: 10px;
+span {
+  font-family: 'Muli', serif; 
+
 }
+
+span .glyphicon-chevron-left {
+  font-size: 3.2em;
+  margin-left: 20px;
+}
+
+#containerForWork {
+  width: 65%;
+  height: 320px;
+  background-color: white;
+}
+
+
+h3 {
+  color: #f7484e;
+  font-family: 'Muli'; 
+  font-size: 18px;
+}
+
+#chevron {
+  margin-top: 100px;
+  font-size: 50px
+}
+
+.other {
+  clear: both;
+  text-align: center;
+  padding: 50px;
+  font-family: 'Muli';
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  color: #f7484e;
+}
+
+
+#hire {
+  width: 100%;
+  height: 500px;
+  clear: both;
+  font-family: 'Muli', serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 100px; 
+}
+
+.hire {
+  height: 400px;
+  margin-top: 900px;
+}
+
+
+.langs li {
+  font-family: 'Muli', serif; 
+  padding: 10px;
+  color: white;
+  list-style-type: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+#technologies {
+  height: 550px ;
+  width: 100%;
+  float: right;
+  clear: both;
+  background-color: #292929;
+}
+
+
 .view img {
-    display: block;
-    position: relative
+    display: block; 
+    align-content: center;
+    position: relative;
+    border: 3px solid #f7484e;
 }
 .view h2 {
     text-transform: uppercase;
@@ -217,13 +369,15 @@ Hover functionality for portfolio*/
 }
 .describe {
   color: white;
+  font-size: 14px
 }
 .view a.info {
     display: inline-block;
     text-decoration: none;
     padding: 7px 14px;
-    background: #000;
+    background: #f7484e;
     color: #fff;
+    font-size: 12px;
     text-transform: uppercase;
     box-shadow: 0 0 1px #000
 }
@@ -272,4 +426,11 @@ Hover functionality for portfolio*/
 .view-third:hover a.info { 
   transform: translateY(0px);
   transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 368px) {
+    img.smallResolution{
+        min-height: 150px;
+    }
+
 }

@@ -2,33 +2,27 @@
 <html>
 <head>
 	<title>Alex Lawson : coder, designer, developer</title>
+      <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+			
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-			<link href='https://fonts.googleapis.com/css?family=Ovo|Muli:400,300' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 
        <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-
-	<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  	
-
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Ovo|Muli:400,300' rel='stylesheet' type='text/css'>
 
-
-		<link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
-		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   
 </head>
-<body id="bootstrap-overrides">
+<body>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -45,27 +39,14 @@
       </button>
       <img src="http://makeyourmark.markandgraham.com/widget/monogramz/monogram_2016-04-29_10-39-07.png" height="75px"/></a>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Portfolio <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">About</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#"></a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
+        <li class="active"><a href="#projects">Portfolio <span class="sr-only">(current)</span></a></li>
+        <li><a href="#bio">About</a></li>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="#">Featured</a></li>
+        <li><a href="#featured">Featured</a></li>
           </ul>
         </li>
       </ul>
@@ -82,132 +63,184 @@
     	</ul>
     </div>
   </div>
+  </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+  </nav>
   <div class="jumbotron" >
-	<h1 class="animated">{A}lex Lawson : </h1>
+	<h1 class="animated" id="name">{A}lex Lawson : </h1>
       
-      <h3 class="animated rubberBand">Designer / Coder / Developer Extraordinaire</h3> 
+      <h3 class="animated bounceInDown" id="tagline">Designer / Coder / Developer Extraordinaire</h3> 
 </div>
 
-<div id="about"  class="container spacer about">
-
-  <h2 class="text-center">About me</h2>  
-  
-<div class="row">
-  <div class="col-sm-6 animated fadeInLeft">
-    <h4><i class="fa fa-camera-retro"></i> Introduction </h4>
-    <p>I have spent the last 5 years as a business owner and photographer. As I found a love and passion for web development and design I realized I could use my skills in visual artistry and apply these to make web programs not only functional but beautiful.</p>
-</div>
-
-  <div class="col-sm-6 animated fadeInRight">
-      <h4><i class="fa fa-coffee"></i> Passion</h4>
-    
-      <p>I'm passionate about being an innovator and creating ways of doing things that increase efficency and improve our lives. </p>    
-    </div>
-  </div>
-
-  <div class="services">
-    <h3 class="text-center wowload fadeInUp">Start Here</h3>
+  <div class="services" id="padding">
+    <h2 class="text-center wowload fadeInUp" id="titles">Start Here</h2>
 	     <ul class="row text-center list-inline  animated bounceInUp">
    		     <li class="btns">
-            <span><i class="fa fa-code"><href="https://github.com/boots525"></i><b>Projects</b></span>
+            <a href="#projects"><span><i class="fa fa-code"></i><b>Projects</b></a></span>
             </li>
             <li class="btns">
-            <span><i class="fa fa-exclamation-circle"></i><b>Featured</b></span>
+            <a href="#featured"><span><i class="fa fa-exclamation-circle"></i><b>Featured</b></a></span>
             </li>
             <li class="btns">
-            <span><i class="fa fa-pencil-square-o"></i><b>Blog</b></span>
-            </li>
+            <a href="#bio"><span><i class="fa fa-asterisk"></i><b>Bio</b></a></span>
+             </li> 
             <li class="btns">
-            <span><i class="fa fa-asterisk"></i><b>Bio</b></span>
+            <a href="#technologies"><span><i class="fa fa-desktop"></i><b>Tech</b></a></span>
              </li>        
              <li class="btns">
-            <span><i class="fa fa-envelope"></i><b>Contact</b></span>
+            <a href="#contact"><span><i class="fa fa-envelope"></i><b>Contact</b></a></span>
         </li>
   	</ul>
   </div>
 </div>
 
-<div class="port">   
-    <h3 class="recent">Recent Work</h3><br>
-      <div class="ports container">
-        <div class="view view-third">  
+<div id="padding">
+<div id="about" class="container about">
+<a name="bio"></a>
+  <h2 class="text-center" id="titles">About me</h2>  
+  
+<div class="row">
+  <div class="col-sm-6 animated fadeInLeft">
+    <h4><i class="fa fa-camera-retro"></i> Introduction </h4>
+    <p>I have spent the last 5 years as a business owner and photographer. I love to use my experience with visual artistry to create clean UX and UI in apps using the most popular technologies. <strong> Let's build something amazing.</strong></p>
+</div>
+
+  <div class="col-sm-6 animated fadeInRight">
+      <h4><i class="fa fa-coffee"></i> Passion</h4>
+    
+      <p>I'm passionate about being an innovator and creating tech that increases efficency and improves our lives. I don't believe you need to sacrifice the user experience for the sake of a beautiful application. You can have groundbreaking technology in a beautiful package and that is what I aim to create.</p>    
+    </div>
+</div> 
+
+</div> 
+
+</div>
+<div class="col-lg-12">
+<div class="row no-gutter">
+<flexbox id='yelp'>
+<a name="featured">
+  <div class="col-sm-2">
+  <h2 class="yelp"></a>
+    Featured Project: Yelp Camp
+  </h2>
+    <p>
+      A campsite review app with vanilla JS, nodeJS, mongoDB, express, & RESTful routing. 
+    </p> 
+    <div class="buttons">
+    <a href="https://github.com/boots525/YelpCamp"><button class="btn btn-sm btn-info-outline">Code</button></a>
+    <a href="https://fierce-gorge-92235.herokuapp.com/"><button class="btn btn-sm btn-info-outline">Live Demo</button></a>
+    </div>
+    </div>
+    <img class="img-thumbnail img-responsive" id="yelpcamp" src="images/yelpcamp.jpg"> 
+</flexbox>
+</div>
+
+<div class col-lg-12>
+<div class="row no-gutter">
+<div id="padding">
+<div class="container" id="technologies" name="technologies">
+ 
+  <h3>  Technologies:</h3> 
+  <ul class="langs">
+        <li> HTML </li>
+        <li>CSS</li> 
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>NodeJS</li>
+        <li>MongoDB</li>
+        <li>ExpressJS</li>
+        <li>APIs</li>
+        <li>RESTful Routing</li>
+        <li>Heroku</li>
+        <li>Git/GitHub</li>
+       
+    </ul>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<h2 name="project" class="other">Other projects</h2>
+<a name="projects"> </a>
+<div class="container col-centered-3" id="containerForWork">
+ <div class="row">
+      </span>
+        <span class="view view-third">
         <img src="images/gotlg.jpg" />  
-        <div class="mask">  
+        <span class="mask">  
         <h2>Game of Thrones Quiz</h2>  
           <p class="describe">An object oriented quiz written with vanilla JS</p>  
           <a href="https://github.com/boots525/GOTQuiz"  target="_blank" class="info">View Code</a>  
           <a href="http://boots525.github.io/GOTQuiz/index.html" target="_blank"class="info">Live Demo</a>
-     </div>  
-</div>
-     <div class="view view-third">  
+     </span>  
+</span>
+     <span class="view view-third">  
      <img src="images/patatap.png" />  
-     <div class="mask">  
+     <span class="mask">  
      <h2>Clone of Patatap</h2>  
      <p class="describe">Key Press Game using HowlerJS and PaperJS</p>  
          <a href="https://github.com/boots525/PatatapClone"  target="_blank" class="info">View Code</a>  
          <a href="http://boots525.github.io/PatatapClone/index.html"  target="_blank" class="info">Live Demo</a>
-     </div>  
- </div>
-     <div class="view view-third">  
+     </span>  
+ </span>
+     <span class="view view-third">  
      <img src="images/hotcold.png" />  
-     <div class="mask">  
+     <span class="mask">  
      <h2>Hot or Cold Game</h2>  
      <p class="describe">Number Guessing Game in JS</p>  
          <a href="https://github.com/boots525/hotorcold"  target="_blank" class="info">View Code</a>  
          <a href="http://boots525.github.io/hotorcold/index.html"  target="_blank" class="info">Live Demo</a>
-     </div>  
-</div>
-     <div class="view view-third">  
+     </span>  
+</span>
+     <span class="view view-third">  
      <img src="images/rgb.png" />  
-     <div class="mask">  
+     <span class="mask">  
      <h2>RGB Guessing Game</h2>  
      <p class="describe">Color Guessing Game with Vanilla JS</p>  
          <a href="https://github.com/boots525/ColorGame"   target="_blank" class="info">View Code</a>  
          <a href="http://boots525.github.io/ColorGame/index.html"  target="_blank" class="info">Live Demo</a>
-     </div>  
- </div>
-</div>
-</div>
-
-<fieldset class="portWork">
-    <legend class="portDiv">Click to see more +</legend>
-    <div class="hiders" style="display:none" >
-
-<div class="ports container">
-
-     <div class="view view-third">  
+     </span>  
+ </span>
+     <span class="view view-third">  
      <img class="shop" src="images/shop.png"/>  
-     <div class="mask">  
+     <span class="mask">  
      <h2>Shopping List</h2>  
      <p class="describe">A JQuery Shopping List</p>  
          <a href="https://github.com/boots525/shoppinglist"  target="_blank" class="info">View Code</a>  
          <a href="http://boots525.github.io/shoppinglist/index.html"   target="_blank"class="info">Live Demo</a>
-     </div>  
-     </div>
-          <div class="view view-third">  
+     </span>  
+     </span>
+          <span class="view view-third">  
      <img class="shop" src="images/street.png"/>  
-     <div class="mask">  
+     <span class="mask">  
      <h2>JQuery Streetfighter Game</h2>  
      <p class="describe">Clone of Streetfighter using JQuery</p>  
          <a href="https://github.com/boots525/jquery-streetfighter" class="info">View Code</a>  
          <a href="http://boots525.github.io/jquery-streetfighter/main.html" class="info">Live Demo</a>
-     </div>  
+     </span>  
+ </span>
  </div>
- </div>
-
-<p>
 </div>
 
-  <script type="text/javascript" src="js/app.js"></script>
-  <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<div>
-<footer class="container-fluid text-center">
-  <p>Copyright 2016 Alexis Lawson </p>
-</footer>
+<br>
+<div class="container" id="hire">
+<a name="contact"><h1>Hire Me:</h1><p></p>
+<span class="hire">
+  
+    <span class="glyphicon glyphicon-envelope"><h3>email: alexisalawson@gmail.com<br></span></h3><p>
+    
+    <span class="glyphicon glyphicon-phone-alt"> <h3>phone: 561.312.5141</span></h3>
+  
+
+
+
+</span>
 </div>
-</nav>
+<script src="js/app.js"></script>
+<br>
 </body>
+
 </html>
