@@ -186,16 +186,23 @@ body {
     position: relative;
     background: #F5F5F5;
 }
+
+
+@media only screen and (min-width: 400px) {
 .sliderItem{
-    width: 100%;
+    max-width: 100%;
     position: relative;
     background: 
     linear-gradient(
       rgba(255, 255, 255, 0.45), 
       rgba(255, 255, 255, 0.45)
     ),
-    url(../images/slide/lexheadsketch.png) no-repeat top center / cover #F5F5F5;
+    url(../images/slide/lexheadsketch.png) no-repeat top right / cover #F5F5F5;
+
 }
+}
+
+
 .slderHeading{
     width: 50%;
     padding: 50px;
@@ -682,7 +689,13 @@ body {
 // Fun Facts
 =========================================================================*/
 .funfactsection{
-    background: url(../images/bg/bg12.jpg) no-repeat fixed center center / cover;
+    background: url(../images/bg/plan.jpg) no-repeat fixed center center / cover;
+}
+
+#stats {
+    margin: 0 auto; 
+    text-align: center;
+    margin-left: 23%;
 }
 .overlay{
     background: rgba(40, 40, 40, .6);
