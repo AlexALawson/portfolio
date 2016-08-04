@@ -190,7 +190,7 @@ body {
 
 @media only screen and (min-width: 400px) {
 .sliderItem{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     position: relative;
     background: 
