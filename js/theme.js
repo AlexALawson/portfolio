@@ -292,7 +292,7 @@
     if($(".slderHeading").length > 0)
     {
         $(".slderHeading").typed({
-            strings: ["", "Hi.", "I'm Alex.", "I love to build cool things", "Let's make something amazing."],
+            strings: ["", "Hi.", "I'm Alex.", "I love to build cool things", "Let's create something amazing."],
             typeSpeed: 75,
             backSpeed: 50,
             loop: false,
