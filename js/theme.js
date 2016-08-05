@@ -18,13 +18,9 @@
         var ban_items = $('.ban_items').height();
         var slcontents = $('.slcontents').height();
         var b1desc = $('.bdescs').height();
-        
         var banPad = (winHeight - ban_items) / 2;
-        var slcontentsPad = (winHeight - slcontents) / 2;
         var b1descPad = (winHeight - b1desc) / 2;
 
-        $('.ban_items').css({'padding-top': banPad});
-        $('.slcontents').css({'padding-top': slcontentsPad});
         $('.bdescs').css({'padding-top': b1descPad});
         $('.bannersa').css({'height': winHeight});
         $('.bannerSix').css({'height': winHeight});
