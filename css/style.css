@@ -183,6 +183,8 @@ body {
 =========================================================================*/
 .sliderarea{
     width: 100%;
+    height: 500px;
+    overflow: hidden;
     position: relative;
     background: #F5F5F5;
 }
