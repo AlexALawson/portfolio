@@ -895,8 +895,19 @@ a.pp_close{
     text-align: center;
 }
 /*=======================================================================
-//  About Us
+//  About Me
 =========================================================================*/
+
+.jobs {
+    padding: 50px; 
+}
+
+.font li {
+    padding: 25px;
+}
+.font li {
+    list-style-type: none;
+}
 .aboutItem{
     position: relative;
     border-top: 1px solid #e7e7e7;
