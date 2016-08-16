@@ -905,7 +905,7 @@ a.pp_close{
 .font li {
     padding: 25px;
 }
-.font li {
+ li {
     list-style-type: none;
 }
 .aboutItem{
